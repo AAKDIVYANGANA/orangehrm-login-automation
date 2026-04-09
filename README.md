@@ -1,31 +1,61 @@
-# OrangeHRM Login Automation Project
+# OrangeHRM Login Automation 🚀
 
-## 📌 Overview
-This project automates the login functionality of the **OrangeHRM** web application. It is built using **Selenium WebDriver** and **TestNG**, following the **Page Object Model (POM)** design pattern to ensure maintainability and reusability of the code.
+A test automation project built with **Selenium WebDriver**, 
+**TestNG**, and **Maven** in Java using Page Object Model (POM).
+
+## 📁 Project Structure
+
+SeleniumLearning/
+├── src/
+│   └── test/
+│       └── java/
+│           ├── pages/
+│           │   └── LoginPage.java
+│           └── tests/
+│               └── LoginTest.java
+├── pom.xml
+└── .gitignore
+
+## 🛠️ Technologies Used
+
+- Java 25
+- Selenium WebDriver 4.18.1
+- TestNG 7.9.0
+- Maven
+- IntelliJ IDEA
 
 ## 🧪 Test Scenarios
-| TC ID | Test Scenario | Expected Result | Status |
-|:---:|---|---|:---:|
-| TC01 | Valid Login | Should redirect to Dashboard | ✅ Pass |
-| TC02 | Invalid Password | Should display "Invalid credentials" | ✅ Pass |
-| TC03 | Invalid Username | Should display "Invalid credentials" | ✅ Pass |
-| TC04 | Empty Fields | Should display "Required" validation error | ✅ Pass |
 
-## 🛠️ Technologies & Tools
-* **Language:** Java 25
-* **Automation Tool:** Selenium WebDriver (v4.18.1)
-* **Testing Framework:** TestNG (v7.9.0)
-* **Build Tool:** Maven
+| TC | Scenario | Expected Result | Status |
+|---|---|---|---|
+| TC01 | Valid Login | Dashboard visible | ✅ Pass |
+| TC02 | Invalid Password | Error message shown | ✅ Pass |
+| TC03 | Invalid Username | Error message shown | ✅ Pass |
+| TC04 | Empty Fields | Required error shown | ✅ Pass |
 
-## Design Pattern:
-Page Object Model (POM)
+## 🎯 Design Pattern
 
-## 🏗️ Project Structure
-- `src/test/java/pages`: Contains Page Object classes (Locators and Methods).
-- `src/test/java/tests`: Contains TestNG test scripts.
+Page Object Model (POM) — separates page elements 
+from test logic for maintainable test structure.
 
-## 🚀 How to Run
+## ▶️ How to Run
+
 1. Clone the repository:
    git clone https://github.com/AAKDIVYANGANA/orangehrm-login-automation.git
+
 2. Open in IntelliJ IDEA
-3. Run `LoginTest.java`
+
+3. Run Maven install:
+   mvn clean install -U
+
+4. Run LoginTest.java using TestNG
+
+## 📌 Notes
+
+- Chrome browser is required
+- Selenium Manager automatically handles ChromeDriver setup
+- Test site used: OrangeHRM Demo (opensource-demo.orangehrmlive.com)
+
+## 👩‍💻 Author
+
+**Ahinsa Divyangana**
