@@ -4,7 +4,7 @@ A test automation project built with **Selenium WebDriver**,
 **TestNG**, and **Maven** in Java using Page Object Model (POM).
 
 ## 📁 Project Structure
-
+```
 SeleniumLearning/
 ├── src/
 │   └── test/
@@ -15,7 +15,7 @@ SeleniumLearning/
 │               └── LoginTest.java
 ├── pom.xml
 └── .gitignore
-
+```
 ## 🛠️ Technologies Used
 
 - Java 25
