@@ -25,8 +25,7 @@ Page Object Model (POM)
 - `src/test/java/tests`: Contains TestNG test scripts.
 
 ## 🚀 How to Run
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/AAKDIVYANGANA/orangehrm-login-automation.git](https://github.com/AAKDIVYANGANA/orangehrm-login-automation.git)
+1. Clone the repository:
+   git clone https://github.com/AAKDIVYANGANA/orangehrm-login-automation.git
 2. Open in IntelliJ IDEA
 3. Run `LoginTest.java`
