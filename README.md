@@ -69,12 +69,16 @@ One of the core features of this framework is the ability to capture and embed s
 ## ▶️ How to Run
 
 1. Clone the repository:
+```
    git clone https://github.com/AAKDIVYANGANA/orangehrm-login-automation.git
+```
 
 2. Open in IntelliJ IDEA
 
 3. Run Maven install:
+```
    mvn clean install -U
+```
 
 4. Run LoginTest.java using TestNG
 
