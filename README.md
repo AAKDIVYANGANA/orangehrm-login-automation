@@ -1,7 +1,21 @@
 # OrangeHRM Login Automation 🚀
 
-A test automation project built with **Selenium WebDriver**, 
-**TestNG**, and **Maven** in Java using Page Object Model (POM).
+A professional Java-based Test Automation Framework built to automate the login functionality of the **OrangeHRM** demo portal. Demonstrates the **Page Object Model (POM)** design pattern for maintainable and scalable automation scripts.
+
+### 🚀 Key Features
+- **Design Pattern:** Page Object Model (POM) for better code organization
+- **Framework:** Built using **Selenium WebDriver** and **TestNG**.
+- **Reporting:** Integrated **Extent Reports** for interactive and visual HTML test reports.
+- **Auto Screenshot on Failure:** Screenshots automatically captured and attached to the report on test failure
+- **Build Tool:** Managed dependencies using **Maven**.
+
+### 🛠️ Tech Stack
+* **Language:** Java 17
+* **Automation:** Selenium WebDriver 4.18.1
+* **Testing Framework:** TestNG 7.9.0
+* **Reporting:** Extent Reports 5.1.1
+* **Build Tool:** Maven
+* **Utilities:** Apache Commons IO (for screenshots)
 
 ## 📁 Project Structure
 ```
@@ -9,20 +23,18 @@ SeleniumLearning/
 ├── src/
 │   └── test/
 │       └── java/
+            ├── base/
+│           │   └── BaseTest.java
 │           ├── pages/
 │           │   └── LoginPage.java
-│           └── tests/
-│               └── LoginTest.java
+            ├── tests/
+│           │   └── LoginTest.java
+│           └── utils/
+│               └── ExtentManager.java 
+                └── ScreenshotUtils.java
 ├── pom.xml
 └── .gitignore
 ```
-## 🛠️ Technologies Used
-
-- Java 25
-- Selenium WebDriver 4.18.1
-- TestNG 7.9.0
-- Maven
-- IntelliJ IDEA
 
 ## 🧪 Test Scenarios
 
@@ -33,10 +45,26 @@ SeleniumLearning/
 | TC03 | Invalid Username | Error message shown | ✅ Pass |
 | TC04 | Empty Fields | Required error shown | ✅ Pass |
 
-## 🎯 Design Pattern
+### 📸 Test Evidence & Reporting
+The framework generates a detailed HTML report after every execution. It provides clear insights into which tests passed or failed.
 
-Page Object Model (POM) — separates page elements 
-from test logic for maintainable test structure.
+#### **1. Overall Test Summary**
+The dashboard provides a high-level view of the test execution results.
+> ![Dashboard Summary](documentation/image_d8d74e.png)
+
+#### **2. Detailed Test Logs**
+Each test case is logged with specific details and pass/fail statuses.
+> ![Detailed Logs](documentation/image_d8d70a.png)
+
+#### **Failure Evidence & Automatic Screenshots**
+One of the core features of this framework is the ability to capture and embed screenshots automatically upon test failure.
+
+* **Embedded Screenshot in Report:** When a test fails, the reason for failure and the screenshot are displayed together.
+> ![Failure in Report](documentation/image_d8d77a.png)
+
+* **Detailed View:** You can click and expand the screenshot to see the exact UI state at the time of failure.
+> ![Expanded Failure Screenshot](documentation/image_d8d7b4.png)
+
 
 ## ▶️ How to Run
 
@@ -49,6 +77,8 @@ from test logic for maintainable test structure.
    mvn clean install -U
 
 4. Run LoginTest.java using TestNG
+
+5. View the report: target/ExtentReport.html
 
 ## 📌 Notes
 
