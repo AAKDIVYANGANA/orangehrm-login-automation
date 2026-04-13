@@ -2,7 +2,7 @@
 
 A professional Java-based Test Automation Framework built to automate the login functionality of the **OrangeHRM** demo portal. Demonstrates the **Page Object Model (POM)** design pattern for maintainable and scalable automation scripts.
 
-### 🚀 Key Features
+### ✨ Key Features
 - **Design Pattern:** Page Object Model (POM) for better code organization
 - **Framework:** Built using **Selenium WebDriver** and **TestNG**.
 - **Reporting:** Integrated **Extent Reports** for interactive and visual HTML test reports.
