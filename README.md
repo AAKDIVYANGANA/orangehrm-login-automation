@@ -50,20 +50,20 @@ The framework generates a detailed HTML report after every execution. It provide
 
 #### **1. Overall Test Summary**
 The dashboard provides a high-level view of the test execution results.
-> ![Dashboard Summary](documentation/image_d8d74e.png)
+![Dashboard Summary](documentation/dashboard-summary.png)
 
 #### **2. Detailed Test Logs**
 Each test case is logged with specific details and pass/fail statuses.
-> ![Detailed Logs](documentation/image_d8d70a.png)
+![Detailed Logs](documentation/test-details.png)
 
 #### **Failure Evidence & Automatic Screenshots**
 One of the core features of this framework is the ability to capture and embed screenshots automatically upon test failure.
 
 * **Embedded Screenshot in Report:** When a test fails, the reason for failure and the screenshot are displayed together.
-> ![Failure in Report](documentation/image_d8d77a.png)
+![Failure in Report](documentation/failure-report.png)
 
 * **Detailed View:** You can click and expand the screenshot to see the exact UI state at the time of failure.
-> ![Expanded Failure Screenshot](documentation/image_d8d7b4.png)
+![Expanded Failure Screenshot](documentation/failure-screenshot.png)
 
 
 ## ▶️ How to Run
@@ -78,7 +78,7 @@ One of the core features of this framework is the ability to capture and embed s
 
 4. Run LoginTest.java using TestNG
 
-5. View the report: target/ExtentReport.html
+5. View the report: open target/ExtentReport.html
 
 ## 📌 Notes
 
